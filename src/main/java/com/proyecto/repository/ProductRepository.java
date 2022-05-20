@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @CrossOrigin(value = "*")
+@Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
     @Query(value = "SELECT * FROM PRODUCT", nativeQuery = true)
